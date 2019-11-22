@@ -53,3 +53,15 @@ void afficherParValeur(Chaine s1){
 void afficherParReference(const Chaine &s1){
     s1.afficher();
 }
+
+Chaine& Chaine::operator=(const Chaine &uC){
+    if (&uC!=this){
+        delete [] tab;
+        capacite=uC.capacite;
+        if (capacite){
+            tab=new char[capacite];
+            strcpy(tab,uC.tab);
+        }
+    }
+    return *this;
+}

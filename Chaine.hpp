@@ -20,13 +20,10 @@ class Chaine{
         char getCapacite() const;
         void afficher(std::ostream &flux) const;
         void afficher() const;
-        
-
-        
+        Chaine& operator=(const Chaine &uC);
 };
 
 void afficherParValeur(Chaine s1);
 void afficherParReference(const Chaine &s1);
 
 #endif
-
