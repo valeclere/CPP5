@@ -92,3 +92,12 @@ TEST_CASE("Surcharge <<") {
     CHECK( ss.str() == chaine ); //  test de std::string, again :-))
 }
 */
+
+
+TEST_CASE("Surcharge []") {
+	const char * chaine = "une nouvelle surcharge";
+	Chaine s(chaine);
+    s[2]='a';
+
+    CHECK( s[2] == 'a' );
+}

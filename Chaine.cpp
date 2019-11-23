@@ -65,3 +65,9 @@ Chaine& Chaine::operator=(const Chaine &uC){
     }
     return *this;
 }
+
+
+char& Chaine::operator[](int k){
+    return tab[k];
+}
+

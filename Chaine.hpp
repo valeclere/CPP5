@@ -21,6 +21,8 @@ class Chaine{
         void afficher(std::ostream &flux) const;
         void afficher() const;
         Chaine& operator=(const Chaine &uC);
+        char& operator[](int k);
+    
 };
 
 void afficherParValeur(Chaine s1);
